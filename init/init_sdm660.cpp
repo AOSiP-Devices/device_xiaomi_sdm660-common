@@ -50,6 +50,22 @@ char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
 
+void property_override(char const prop[], char const value[])
+{
+    prop_info *pi;
+     pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+ void property_override_dual(char const system_prop[],
+        char const vendor_prop[], char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void check_device()
 {
     struct sysinfo sys;
@@ -73,9 +89,36 @@ void check_device()
     }
 }
 
+static void init_setup_model_properties()
+{
+    std::ifstream fin;
+    std::string buf;
+    std::string device;
+    std::string region;
+
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' ')){
+        if (buf.find("androidboot.hwdevice") != std::string::npos){
+            device = buf;
+        }else if (buf.find("androidboot.hwc") != std::string::npos){
+            region = buf;
+        }
+    }
+    fin.close();
+
+    if (device.find("whyred") != std::string::npos) {
+        if (region.find("CN") != std::string::npos || region.find("Global") != std::string::npos) {
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5");
+        } else {
+            property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5 Pro");
+        }
+    }
+}
+
 void vendor_load_properties()
 {
     check_device();
+    init_setup_model_properties();
 
     property_set("dalvik.vm.heapstartsize", heapstartsize);
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
