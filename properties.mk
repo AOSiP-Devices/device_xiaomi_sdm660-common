@@ -154,3 +154,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.mot_detect=true \
     ro.vendor.sensors.pmd=true \
     ro.vendor.sensors.sta_detect=true
+
+
+# VoLTE hax
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1
