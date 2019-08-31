@@ -22,9 +22,9 @@
 #
 
 # Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 
-COMMON_PATH := device/xiaomi/wayne-common
+COMMON_PATH := device/xiaomi/sdm660-common
 
 # Inherit properties
 $(call inherit-product, $(COMMON_PATH)/properties.mk)
