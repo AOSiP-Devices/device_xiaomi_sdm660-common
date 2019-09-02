@@ -196,9 +196,9 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wayne
+TARGET_INIT_VENDOR_LIB := libinit_sdm660
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wayne
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
