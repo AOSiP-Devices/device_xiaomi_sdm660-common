@@ -693,6 +693,13 @@ vendor/lib64/libsensor_reg.so|65bd2a012bb4518d3907036b737a9b2532cb6653
 vendor/lib64/libsensor1.so|847336e80f73f91a155ee7851f0d4f51f3b1031c
 vendor/lib64/sensors.ssc.so|93cd0cdf345367c5bb5185894d2b0c146f63bb09
 
+# Soter - from wayne
+-app/SoterService/SoterService.apk
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
 # Thermal - from jasmine
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
