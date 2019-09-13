@@ -265,15 +265,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|5d4b47b59000ddf10d9b23485
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|173400cccb8bed57335ed8e93276f0e0d26ca2e5
 
 # Fingerprint firmware - from jasmine
-etc/firmware/goodixfp.b00|c5c3594b47dffb3aadb81abced42518d24637893
-etc/firmware/goodixfp.b01|35e6cc6108ee5f111741ef5d9f0b8e2ae1dfd63f
-etc/firmware/goodixfp.b02|ae3a00bbd74309450344a86e94f28b12af0a7c09
-etc/firmware/goodixfp.b03|04945a4a182c6f0fd4c6b5460c6c0437602740cd
-etc/firmware/goodixfp.b04|70f44536261bca100c3d410300e290f1e426d66e
-etc/firmware/goodixfp.b05|c179174508af81ad78b62d4a890abdba84d8c6f5
-etc/firmware/goodixfp.b06|c179174508af81ad78b62d4a890abdba84d8c6f5
-etc/firmware/goodixfp.b07|4983a219580ebdb1e2d0f8e914c3e1f28a1471a0
-etc/firmware/goodixfp.mdt|e525ffa879859bc8707529d251438a017a67777f
 vendor/firmware/fpctzappfingerprint.b00|7ddcb716f2537eabfd7dc741db41f313e602b783
 vendor/firmware/fpctzappfingerprint.b01|49829cd98d8585726800417635ef93638963c1a7
 vendor/firmware/fpctzappfingerprint.b02|fe14d0c23fd5ce28552cc288d7d351cb454ddcad
@@ -283,6 +274,17 @@ vendor/firmware/fpctzappfingerprint.b05|8b2ba9380050139fcb54d45c1978e54c080e6e2c
 vendor/firmware/fpctzappfingerprint.b06|8b2ba9380050139fcb54d45c1978e54c080e6e2c
 vendor/firmware/fpctzappfingerprint.b07|cb22bc47816a9c456fda2fdbd24486ea925fda42
 vendor/firmware/fpctzappfingerprint.mdt|f709249da0d08cdcf43f561782ac3d6695a154ec
+
+# Fingerprint (goodix) firmware - from whyred
+etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
+etc/firmware/goodixfp.b01:vendor/firmware/goodixfp.b01
+etc/firmware/goodixfp.b02:vendor/firmware/goodixfp.b02
+etc/firmware/goodixfp.b03:vendor/firmware/goodixfp.b03
+etc/firmware/goodixfp.b04:vendor/firmware/goodixfp.b04
+etc/firmware/goodixfp.b05:vendor/firmware/goodixfp.b05
+etc/firmware/goodixfp.b06:vendor/firmware/goodixfp.b06
+etc/firmware/goodixfp.b07:vendor/firmware/goodixfp.b07
+etc/firmware/goodixfp.mdt:vendor/firmware/goodixfp.mdt
 
 # FM - from jasmine
 lib/libfm-hci.so|b066567e07279bf59e78f7d318302dd706bb80fe
