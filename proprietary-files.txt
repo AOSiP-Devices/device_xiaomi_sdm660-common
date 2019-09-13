@@ -230,6 +230,16 @@ vendor/lib64/libStDrvInt.so|ff4ef2707ca8d219fd52b2ff629ffc62a43e2480
 vendor/lib64/libtzdrmgenprov.so|3dc9eb29ca0ec753a6e8b62560d3f46abd75edf2
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|24c32756141125aabf94beb9674594075100f03e
 
+# ESE-Powermanager - from whyred 10.3.2.0
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|7596758328bb4a1df43bf4ea85b729f55266ac29
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
+lib/vendor.qti.esepowermanager@1.0.so|85925d5b357da2079b47e15e05b82f32751a7095
+lib64/vendor.qti.esepowermanager@1.0.so|3db84c2bc0852662ed5dea3617e0fffca1d99551
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|ead863d08922144b68a0f10db23a0056e41ea47f
+vendor/lib/vendor.qti.esepowermanager@1.0.so|f614a5e72e3cb036cd86ba1b02bfa8650515a8e0
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|5d4b47b59000ddf10d9b234859be3e14fc6e413d
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|173400cccb8bed57335ed8e93276f0e0d26ca2e5
+
 # Fingerprint firmware - from jasmine
 etc/firmware/goodixfp.b00|c5c3594b47dffb3aadb81abced42518d24637893
 etc/firmware/goodixfp.b01|35e6cc6108ee5f111741ef5d9f0b8e2ae1dfd63f
