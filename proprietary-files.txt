@@ -169,21 +169,8 @@ vendor/lib/hw/consumerir.default.so|f927b0ca8f81b78daa098872b27f599dd5a54141
 vendor/lib64/hw/consumerir.default.so|ad5c1c43bd7af8828efa20b7435f756d85a813b5
 
 # DPM - from jasmine
-bin/dpmd|6c511738d83ba1cfdc75b00b9bd676d231914f3a
-etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
-etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
-etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
-etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|4bdeade509cb417033402c8abbb3bfe7fbf155d0
-framework/dpmapi.jar|4940bdc99ec676e8c6372057f91ffc303f72b49d
-framework/tcmclient.jar|d63f61a2905cc48f0eed56cce5dc0ca80f7ada3a
--priv-app/dpmserviceapp/dpmserviceapp.apk|319d3f8977cb167f062b23ae7f15ea37c83c20ab
-lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
+framework/tcmclient.jar
 lib64/libdiag_system.so|ed605155bb3013af94c88b585e7c365bcab5fd05
-lib64/libdpmctmgr.so|611642251e77a1ce8a4bc59beaf4213bfc0cef8a
-lib64/libdpmfdmgr.so|84a6916dff3b3608e9ac83106df651ba995ca704
-lib64/libdpmframework.so|bbd59055bad5944fe8c8d8c7eb683b94646c6042
-lib64/libdpmtcm.so|db125f21d6f9da6afcb8956ba2eabae58cbeb30e
 vendor/bin/dpmQmiMgr|e2f12b458321a9a9353f1c4ced85bc740a1094d2
 vendor/lib64/libdpmqmihal.so|fecdfdb7591feec835ed713863a8dbcca141b252
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|05af4880ad4c633fe60750ff49525e62822585f7
