@@ -35,6 +35,8 @@ COMMON_PATH := device/xiaomi/sdm660-common
 # Inherit properties
 $(call inherit-product, $(COMMON_PATH)/properties.mk)
 
+PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=log
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
