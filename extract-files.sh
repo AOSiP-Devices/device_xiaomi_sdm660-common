@@ -75,6 +75,8 @@ function blob_fixup() {
         patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so "${2}"
         patchelf --add-needed libcamera_sdm660_shim.so "${2}"
         ;;
+   product/etc/permissions/vendor.qti.hardware.data.connection-V1.{0,1}-java.xml)
+        sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
     esac
 }
 
