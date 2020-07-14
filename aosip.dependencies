@@ -1,11 +1,13 @@
 [
   {
     "repository": "kernel_xiaomi_sdm660",
-    "target_path": "kernel/xiaomi/sdm660"
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "ten-eas"
   },
   {
     "repository": "proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "target_path": "vendor/xiaomi",
+    "branch": "ten-xiaomi-sdm660-eas"
   },
   {
     "repository": "vendor_dirac",
